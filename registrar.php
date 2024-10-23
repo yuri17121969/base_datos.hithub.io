@@ -6,8 +6,10 @@ if (isset($_POST['register'])) {
     if (strlen($_POST['name']) >= 1 && strlen($_POST['email']) >= 1) {
 	    $name = trim($_POST['name']);
 	    $email = trim($_POST['email']);
+	      $direccion = trim($_POST['direccion']);
+	      $celular = trim($_POST['celular']);
 	    $fechareg = date("d/m/y");
-	    $consulta = "INSERT INTO datos(nombre, email, fecha_reg) VALUES ('$name','$email','$fechareg')";
+	    $consulta = "INSERT INTO datos(nombre, email, fecha_reg, direccion, celular) VALUES ('$name','$email','$fechareg','$direccion','$celular')";
 	    $resultado = mysqli_query($conex,$consulta);
 	    if ($resultado) {
 	    	?> 
