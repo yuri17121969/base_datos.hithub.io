@@ -30,7 +30,7 @@ input {
 
 input[type='submit']{
 	background-color: #48e;
-	color: #fff;
+	color: ;
 	width: calc(80% - 20px);
 	margin: 0 10%;
 	margin-top: 22px;
