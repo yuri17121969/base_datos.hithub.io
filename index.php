@@ -10,10 +10,19 @@
     	<h1>¡Suscribete!</h1>
     	<input type="text" name="name" placeholder="Nombre completo">
     	<input type="email" name="email" placeholder="Email">
+        <input type="direccion" name="direccion" placeholder="direccion">
+        <input type="celular" name="celular" placeholder="celular">
+	 
     	<input type="submit" name="register">
+	
+	    
     </form>
-        <?php 
-        include("registrar.php");
-        ?>
+	<?php
+
+		include("registrar.php");
+
+	?>
+
+    
 </body>
 </html>
